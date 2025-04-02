@@ -1,0 +1,28 @@
+[images]
+  remote_images = ["https://source.unsplash.com/.*", "https://images.unsplash.com/.*", "https://ext.same-assets.com/.*", "https://ugc.same-assets.com/.*"]
+
+[build]
+  command = "bun run build"
+  publish = "out"
+
+[build.environment]
+  NETLIFY_USE_YARN = "false"
+  NETLIFY_USE_NPM = "false"
+  NETLIFY_USE_BUN = "true"
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.images]
+  compress = true
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

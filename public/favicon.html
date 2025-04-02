@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DT Favicon Generator</title>
+</head>
+<body style="margin:0; padding:0;">
+    <canvas id="favicon" width="32" height="32" style="width:32px; height:32px;">
+    </canvas>
+    <script>
+        const canvas = document.getElementById('favicon');
+        const ctx = canvas.getContext('2d');
+        
+        // Set background
+        ctx.fillStyle = '#000000';
+        ctx.fillRect(0, 0, 32, 32);
+        
+        // Set text style
+        ctx.fillStyle = '#7CC3FF'; // Light blue color
+        ctx.font = 'bold 16px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        
+        // Draw text
+        ctx.fillText('DT', 16, 16);
+    </script>
+</body>
+</html> 

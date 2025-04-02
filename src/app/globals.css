@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+:root {
+  --background: 220 17% 17%;
+  --foreground: 0 0% 100%;
+  --card: 220 17% 17%;
+  --card-foreground: 0 0% 100%;
+  --popover: 220 17% 17%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 210 100% 70%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 215 27% 94%;
+  --secondary-foreground: 0 0% 20%;
+  --muted: 215 27% 84%;
+  --muted-foreground: 0 0% 60%;
+  --accent: 210 100% 70%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 240 5% 84%;
+  --input: 240 5% 84%;
+  --ring: 210 100% 70%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 210 100% 70%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 210 100% 70%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 210 100% 70%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+  }
+
+  .section-header {
+    @apply text-primary font-bold text-2xl sm:text-3xl mb-6 uppercase;
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 py-12 md:py-16;
+  }
+
+  .diagonal-lines {
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+                      linear-gradient(225deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+                      linear-gradient(315deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+                      linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 0, 30px -30px, 0px 30px;
+  }
+}
