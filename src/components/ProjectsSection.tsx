@@ -19,7 +19,7 @@ const ProjectsSection = () => {
       • Interactive Dashboard
       • Progress Monitoring`,
       techStack: 'Python, Flask, SQLAlchemy, Gemini API, HTML/CSS, JavaScript, SQLite',
-      github: 'https://github.com/yourusername/nutrient-tracker'
+      github: 'https://github.com/davidthissen1/Nutrify'
     },
     
   ];
