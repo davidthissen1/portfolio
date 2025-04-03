@@ -21,7 +21,22 @@ const ProjectsSection = () => {
       techStack: 'Python, Flask, SQLAlchemy, Gemini API, HTML/CSS, JavaScript, SQLite',
       github: 'https://github.com/davidthissen1/Nutrify'
     },
-    
+    {
+      id: 2,
+      name: 'MyNews',
+      year: '2024',
+      imageUrl: '/images/mynews.jpeg',
+      description: `A modern news aggregation platform that provides users with personalized news feeds based on their interests and reading habits. The application uses machine learning to curate and recommend relevant news articles.
+
+      Key Features:
+      • Personalized News Feed
+      • AI-Powered Article Recommendations
+      • Category-based News Filtering
+      • User Preferences Management
+      • Real-time News Updates`,
+      techStack: 'React, Node.js, PostgreSQL, TensorFlow.js, News API, Tailwind CSS',
+      github: 'https://github.com/davidthissen1/mynews'
+    }
   ];
 
   return (
