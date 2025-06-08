@@ -10,7 +10,7 @@ const HeroSection: FC = (): JSX.Element => {
           Welcome, I'm <span className="text-primary font-medium">David Thissen</span>.
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl font-light">
-          I'm a Data Science Student.
+          I'm a Computer Science Student.
         </p>
 
         <div className="mt-8 space-x-4">
