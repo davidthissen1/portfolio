@@ -15,7 +15,7 @@ const Navigation = () => {
           <NavLink href="/#profile">Profile</NavLink>
           <NavLink href="/#projects">Projects</NavLink>
           <Button size="sm" variant="outline" asChild>
-            <Link href="/resume (2).pdf" target="_blank">
+            <Link href="/Resume copy.pdf" target="_blank">
               Download resume
             </Link>
           </Button>
