@@ -3,6 +3,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent } from './ui/card';
 
+interface Project {
+  id: string;
+  name: string;
+  year: string;
+  imageUrl: string;
+  description: string;
+  techStack: string[];
+  github: string;
+}
+
 const ProjectsSection = () => {
   const projects = [
     {
@@ -22,20 +32,22 @@ const ProjectsSection = () => {
       github: 'https://github.com/davidthissen1/Nutrify'
     },
     {
-      id: 2,
+      id: 'mynews',
       name: 'MyNews',
       year: '2024',
-      imageUrl: '/images/mynews.jpeg',
-      description: `A modern news aggregation platform that provides users with personalized news feeds based on their interests and reading habits. The application uses machine learning to curate and recommend relevant news articles.
-
-      Key Features:
-      • Personalized News Feed
-      • AI-Powered Article Recommendations
-      • Category-based News Filtering
-      • User Preferences Management
-      • Real-time News Updates`,
-      techStack: 'React, Node.js, PostgreSQL, TensorFlow.js, News API, Tailwind CSS',
+      imageUrl: '/mynews.jpeg',
+      description: 'A news aggregation platform that uses AI to summarize and categorize news articles. Features include personalized news feeds, article summarization, and topic categorization.',
+      techStack: ['React', 'Node.js', 'PostgreSQL', 'TensorFlow.js', 'News API', 'Tailwind CSS'],
       github: 'https://github.com/davidthissen1/mynews'
+    },
+    {
+      id: 'career-cloud',
+      name: 'Career Cloud',
+      year: '2024',
+      imageUrl: '/coopercloud.png',
+      description: 'An AI-powered career quiz application that helps users discover their ideal career path. Users answer a series of questions about their interests, skills, and preferences, and the AI algorithm provides personalized job recommendations based on their responses.',
+      techStack: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Express'],
+      github: 'https://github.com/Professional-Computing-Society/275Final'
     }
   ];
 
@@ -66,7 +78,9 @@ const ProjectsSection = () => {
                       <div className="space-y-2">
                         <div>
                           <span className="text-sm font-medium text-primary">Tech Stack: </span>
-                          <span className="text-sm text-muted-foreground">{project.techStack}</span>
+                          <span className="text-sm text-muted-foreground">
+                            {Array.isArray(project.techStack) ? project.techStack.join(', ') : project.techStack}
+                          </span>
                         </div>
 
                         {project.github && (
