@@ -32,23 +32,24 @@ const ProjectsSection = () => {
       github: 'https://github.com/davidthissen1/Nutrify'
     },
     {
+      id: 'career-cloud',
+      name: 'Career Cloud',
+      year: '2025',
+      imageUrl: '/images/coopercloud.png',
+      description: 'An AI-powered career quiz application that helps users discover their ideal career path. Users answer a series of questions about their interests, skills, and preferences, and the AI algorithm provides personalized job recommendations based on their responses.',
+      techStack: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Express'],
+      github: 'https://github.com/Professional-Computing-Society/275Final'
+    },
+    {
       id: 'mynews',
       name: 'MyNews',
       year: '2024',
-      imageUrl: '/mynews.jpeg',
+      imageUrl: '/images/mynews.jpeg',
       description: 'A news aggregation platform that uses AI to summarize and categorize news articles. Features include personalized news feeds, article summarization, and topic categorization.',
       techStack: ['React', 'Node.js', 'PostgreSQL', 'TensorFlow.js', 'News API', 'Tailwind CSS'],
       github: 'https://github.com/davidthissen1/mynews'
     },
-    {
-      id: 'career-cloud',
-      name: 'Career Cloud',
-      year: '2024',
-      imageUrl: '/coopercloud.png',
-      description: 'An AI-powered career quiz application that helps users discover their ideal career path. Users answer a series of questions about their interests, skills, and preferences, and the AI algorithm provides personalized job recommendations based on their responses.',
-      techStack: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Express'],
-      github: 'https://github.com/Professional-Computing-Society/275Final'
-    }
+    
   ];
 
   return (
