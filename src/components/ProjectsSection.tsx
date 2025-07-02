@@ -24,6 +24,8 @@ const ProjectsSection = () => {
 
       Key Features:
       • Real-time price data integration from BLS and USDA APIs
+      • AI-powered recipe recommendations and grocery alternatives using OpenAI API
+      • Smart cart analysis that suggests recipes and cost-effective alternatives
       • Responsive, user-friendly UI with Tailwind CSS and shadcn/ui components
       • Dynamic tables and interactive charts
       • Live search and filter functionality
