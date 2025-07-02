@@ -63,7 +63,7 @@ const ProjectsSection = () => {
       • Live search and filter functionality
       • Serverless API routes for secure data aggregation`,
       techStack: ['Next.js', 'TypeScript', 'PostgreSQL', 'BLS API', 'USDA API', 'Tailwind CSS'],
-      github: ''
+      github: 'https://github.com/davidthissen1/CostCheck'
     }
     
   ];
