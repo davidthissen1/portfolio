@@ -49,6 +49,22 @@ const ProjectsSection = () => {
       techStack: ['React', 'Node.js', 'PostgreSQL', 'TensorFlow.js', 'News API', 'Tailwind CSS'],
       github: 'https://github.com/davidthissen1/mynews'
     },
+    {
+      id: 'costcheck',
+      name: 'CostCheck',
+      year: '2025',
+      imageUrl: '/images/costcheck.png',
+      description: `A modern price-tracking dashboard using Next.js (React, TypeScript), integrating real-time grocery and household item price data from the Bureau of Labor Statistics (BLS) and USDA APIs.
+
+      Key Features:
+      • Real-time price data integration from BLS and USDA APIs
+      • Responsive, user-friendly UI with Tailwind CSS and shadcn/ui components
+      • Dynamic tables and interactive charts
+      • Live search and filter functionality
+      • Serverless API routes for secure data aggregation`,
+      techStack: ['Next.js', 'TypeScript', 'PostgreSQL', 'BLS API', 'USDA API', 'Tailwind CSS'],
+      github: ''
+    }
     
   ];
 
