@@ -147,7 +147,7 @@ const ProfileSection = () => {
             <Card className="h-full bg-background/50 border-0">
               <CardContent className="p-6">
                 <p className="text-muted-foreground leading-relaxed mb-8">
-                  An emerging data scientist and demonstrated self-starter with relevant and practiced technical skills seeking opportunities 
+                  An emerging computer scientist and demonstrated self-starter with relevant and practiced technical skills seeking opportunities 
                   to tackle challenging research and business growth needs through data processing, analysis, and visualization by engaging 
                   and collaborating with motivated and results-seeking professionals.
                 </p>
